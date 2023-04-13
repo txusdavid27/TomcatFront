@@ -1,0 +1,23 @@
+<div *ngIf="viewMode; ">
+  <div *ngIf="currentProduct.id">
+    <h4>Product</h4>
+    <div>
+      <label><strong>Name:</strong></label> {{ currentProduct.nombre }}
+    </div>
+    <div>
+      <label><strong>Description:</strong></label>
+      {{ currentProduct.descripcion }}
+    </div>
+    <div>
+      <label><strong>Price:</strong></label>
+      {{ currentProduct.precio }}
+    </div>
+
+
+  </div>
+  <div *ngIf="!currentProduct.id">
+    <br />
+    <p>Please click on a Product...</p>
+  </div>
+
+</div>
